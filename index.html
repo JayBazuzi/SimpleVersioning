@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Versioning 0.1</title>
+    <style type="text/css">
+        h1, h2, ol {
+            margin: 0;
+            padding: 0;
+        }
+
+        html { font: 14.4px/1.5 Helvetica, Arial, sans-serif; }
+
+        body {
+            margin: 0 auto;
+            padding: 0 10%;
+            max-width: 710px;
+        }
+
+        @-ms-viewport { width: device-width; }
+
+        html { -webkit-text-size-adjust: 100%; }
+
+        h1, h2, h3 {
+            text-align: center;
+            font-weight: normal;
+        }
+
+        h1 {
+            font-size: 43px;
+            margin: 1.1em 0 .7em;
+        }
+
+        h2 {
+            margin: 2.1em 0 .7em;
+            font-size: 24px;
+        }
+
+        h3 {
+            text-align: left;
+            font-size: 15.8px;
+            margin-bottom: .6em;
+        }
+
+        a { color: #009; }
+
+        a:hover, a:focus { color: #000; }
+
+        ol { padding-left: 1.5em; }
+
+        p { margin: 0 0 1em; }
+
+        @media print {
+            body { width: 100%; }
+
+            h1, h2, h3 { font-weight: bold; }
+
+            a:after {
+                content: ' <' attr(href) '>';
+                font-size: 90%;
+            }
+        }
+
+        /* Nav */
+
+        ol.nav {
+            background-color: #333;
+            list-style-type: none;
+            margin: 0;
+            padding: 10px;
+            overflow: hidden;
+        }
+
+        ol.nav li {
+            display: inline;
+            font-weight: bold;
+            margin-right: 20px;
+        }
+
+        ol.nav li a { color: white; }
+
+        ol.lang { background-color: white; }
+
+        ol.lang li a { color: black; }
+    </style>
+</head>
+<body bgcolor="#eee">
+
+<h1>Simple Versioning 0.1</h1>
+
+<h2>Summary</h2>
+
+Given a version number MAJOR.MINOR, increment the:
+
+<OL>
+    <LI>MAJOR version when you make incompatible API changes.</LI>
+    <LI>MINOR version when you make backwards-compatible changes.</LI>
+</OL>
+
+<h2>Introduction</h2>
+
+<p>First, I want to thank <A HREF="http://semver.org">Semantic Versioning</A> for giving a tool to manage compatibility in software dependencies.</p>
+
+<p>
+    <i>SemVer</i> treats releases with new features separately from releases with bug fixes. For dependency management,
+    that distinction isn't important: all that matters is backwards compatibility. "Fixed a bug" and "Added a feature"
+    are both examples of "made the software better", as long as you didn't break something.
+</p>
+
+<h2>Simple Versioning Specification (SimVer)</h2>
+
+<p>
+    SimVer is the same <A HREF="http://semver.org">SemVer</A>, with these modifications:
+</p>
+
+<OL>
+    <LI>A normal version number MUST take the form X.Y. X is the major version and Y is the minor version.</LI>
+    <LI>Minor version MUST be incremented for any release which maintains backwards compatibility to the public API.</LI>
+    <LI>Major version MUST be incremented if any backwards incompatible changes are introduced to the public API.</LI>
+    <LI>When compatibilty with SimVer tooling is required, it is acceptable to add a '.0' patch version, e.g. 2.1.0, but normally that should be avoided.</LI>
+</OL>
+
+<h2>Context</h2>
+
+<p>SimVer works best when bugs are relatively rare, when you release quickly/easily/safely, and when you don't maintain many released branches.</p>
+
+<h2>FAQ</h2>
+
+<h3>As a consumer of an API, how can I make the most of SimVer?</h3>
+
+<UL>
+    <LI>Always accept minor releases (e.g. specify '2.*')</LI>
+    <LI>Update early and often.</LI>
+    <LI>When you see deprecation warnings, update your code as appropriate.</LI>
+</UL>
+
+<h3>What kinds of changes make good point releases?</h3>
+
+<UL>
+    <LI>Bug fixes.</LI>
+    <LI>New functionality.</LI>
+    <LI>Marking old features as deprecated.</LI>
+</UL>
+
+<h3>If even the tiniest backwards incompatible changes to the public API require a major version bump, won't I end up at version 42.0 very rapidly?</h3>
+
+<p>Maybe. Why is this a problem?</p>
+
+<h3>What about fixing security issues></h3>
+
+<p>I'm tempted to say that security fixes can be minor releases, even if they break compatibility. Thoughts?</p>
+
+<h2>About</h2>
+
+<p>
+    The Simple Versioning specification is authored by Jay Bazuzi.
+</p>
+
+<p>
+    If you'd like to leave feedback, please <a href="http://twitter/jaybazuzi">tweet at me</a>.
+</p>
+
+<h2>License</h2>
+
+<p>
+    <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons - CC BY 3.0</a>
+</p>
+
+<!-- hi! -->
+</body>
+</html>
