@@ -31,15 +31,15 @@ SimVer works best when bugs are relatively rare, when you release quickly/easily
 
 ### As a consumer of an API, how can I make the most of SimVer?
 
- - >Always accept minor releases (e.g. specify `2.*`)
- - >Update early and often.
- - >When you see deprecation warnings, update your code as appropriate.
+ - Always accept minor releases (e.g. specify `2.*`)
+ - Update early and often.
+ - When you see deprecation warnings, update your code as appropriate.
 
 ### What kinds of changes make good point releases?
 
- - >Bug fixes.
- - >New functionality.
- - >Marking old features as deprecated.
+ - Bug fixes.
+ - New functionality.
+ - Marking old features as deprecated.
 
 ### If even the tiniest backwards incompatible changes to the public API require a major version bump, won't I end up at version 42.0 very rapidly?
 
