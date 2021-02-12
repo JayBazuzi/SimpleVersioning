@@ -53,7 +53,7 @@ I'm tempted to say that security fixes can be minor releases, even if they break
 
 The Simple Versioning specification is authored by Jay Bazuzi.
 
-If you'd like to leave feedback, please [tweet](http://twitter.com/jaybazuzi) at me</a>.
+If you'd like to leave feedback, please [tweet](http://twitter.com/jaybazuzi) at me.
 
 ## License
 
