@@ -15,10 +15,9 @@ First, I want to thank [Semantic Versioning](http://semver.org) for giving the w
 
 >    _SemVer_ treats releases with new features separately from releases with bug fixes. For dependency management, that distinction isn't important: all that matters is backwards compatibility. "Fixed a bug" and "Added a feature" are both examples of "made the software better", as long as you didn't break something. _SimVer_ is meant to address that difference.
 
-
 ## Simple Versioning Specification (SimVer)
 
-SimVer is the same [SemVer](http://semver.org), with these modifications:
+SimVer is [SemVer](http://semver.org) with these modifications:
 
 1. A normal version number MUST take the form X.Y. X is the major version and Y is the minor version.
 1. Minor version MUST be incremented for any release which maintains backwards compatibility to the public API.
