@@ -19,14 +19,14 @@ First, I want to thank [Semantic Versioning](http://semver.org) for giving the w
 
 SimVer is [SemVer](http://semver.org) with these modifications:
 
-1. A normal version number MUST take the form X.Y. X is the major version and Y is the minor version.
+1. A normal version number MUST take the form `X.Y`. `X` is the major version and `Y` is the minor version.
 1. Minor version MUST be incremented for any release which maintains backwards compatibility to the public API.
 1. Major version MUST be incremented if any backwards incompatible changes are introduced to the public API.
-1. When compatibilty with SemVer tooling is required, it is acceptable to add a '.0' patch version, e.g. 2.1.0, but normally that should be avoided.
+1. When compatibilty with SemVer tooling is required, it is acceptable to add a '`.0`' patch version, e.g. `2.1.0`, but normally that should be avoided.
 
 ## Context
 
-SimVer works best when bugs are relatively rare, when you release quickly/easily/safely, and when you don't maintain many released branches.
+SimVer works best when bugs are very rare, when you release quickly/easily/safely, and when you don't maintain released branches.
 
 ## FAQ
 
@@ -34,7 +34,7 @@ SimVer works best when bugs are relatively rare, when you release quickly/easily
 
  - Always accept minor releases (e.g. specify `2.*`)
  - Update early and often.
- - When you see deprecation warnings, update your code as appropriate.
+ - When you see deprecation warnings, update your code promptly.
 
 ### What kinds of changes make good point releases?
 
@@ -42,9 +42,9 @@ SimVer works best when bugs are relatively rare, when you release quickly/easily
  - New functionality.
  - Marking old features as deprecated.
 
-### If even the tiniest backwards incompatible changes to the public API require a major version bump, won't I end up at version 42.0 very rapidly?
+### If even the tiniest backwards incompatible changes to the public API require a major version bump, won't I end up with a large version number like 1337.0 very rapidly?
 
-Maybe. Why is this a problem?
+Sure. I don't see this as a problem.
 
 ### What about fixing security issues?
 
@@ -54,7 +54,7 @@ I'm tempted to say that security fixes can be minor releases, even if they break
 
 The Simple Versioning specification is authored by Jay Bazuzi.
 
-If you'd like to leave feedback, please [tweet](http://twitter.com/jaybazuzi) at me.
+If you'd like to leave feedback, please [toot](https://mastodon.online/@JayBazuzi) at me.
 
 ## License
 
